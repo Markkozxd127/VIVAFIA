@@ -1,5 +1,5 @@
 server:
-  port: ${PORT:8888}
+  port: ${PORT:8795}
 message: Configuracion de Gestión de usuarios en el servidor levantado!
 spring:
   datasource:
