@@ -1,9 +1,6 @@
-# ms-project-management.yml
 server:
   port: ${PORT:8793}
-
-message: Configuración de Gestión de usuarios en el servidor levantado!
-
+message: Configuración de Gestión de Proyectos en el servidor levantado!
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -14,19 +11,20 @@ spring:
     hibernate:
       ddl-auto: update
       database-platform: org.hibernate.dialect.MySQLDialect
+  cloud:
+    config:
+      uri: http://localhost:8081
+
+feign:
+  client:
+    config:
+      ms-management-faculties-schools:
+        url: http://localhost:8792
+      ms-academic-management:
+        url: http://localhost:8791
 
 eureka:
   client:
     register-with-eureka: true
     service-url:
       defaultZone: http://localhost:8761/eureka/
-
-feign:
-  client:
-    config:
-      escuela:
-        url: http://localhost:8792
-      facultad:
-        url: http://localhost:8792
-      semestre:
-        url: http://localhost:8791
