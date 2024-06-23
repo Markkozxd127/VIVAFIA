@@ -1,1 +1,19 @@
-global-message: Servidor de configuracion levantado
+server:
+  port: 8081
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Markkozxd127/VIVAFIA.git
+          clone-on-start: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+#global-message: Servidor de configuracion levantado
