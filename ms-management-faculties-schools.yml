@@ -1,6 +1,6 @@
+# ms-management-faculties-schools.yml
 server:
   port: ${PORT:8792}
-
 message: Configuración de Gestión de usuarios en el servidor levantado!
 
 spring:
