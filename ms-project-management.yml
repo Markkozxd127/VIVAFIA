@@ -20,12 +20,4 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: http://localhost:8761/eureka/
-feign:
-  client:
-    config:
-      facultad-client:
-        url: http://ms-management-faculties-schools
-      escuela-client:
-        url: http://ms-management-faculties-schools
-      semestre-client:
-        url: http://ms-academic-management
+
