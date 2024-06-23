@@ -13,20 +13,11 @@ spring:
       database-platform: org.hibernate.dialect.MySQLDialect
   cloud:
     config:
-      uri: http://localhost:8081
-  main:
-    allow-bean-definition-overriding: true
-
-feign:
-  client:
-    config:
-      ms-management-faculties-schools:
-        url: http://localhost:8792
-      ms-academic-management:
-        url: http://localhost:8791
+      uri: http://localhost:8080
 
 eureka:
   client:
     register-with-eureka: true
     service-url:
       defaultZone: http://localhost:8761/eureka/
+
