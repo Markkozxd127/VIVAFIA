@@ -19,3 +19,10 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: http://localhost:8761/eureka/
+
+feign:
+  client:
+    url:
+      escuela: http://localhost:8792
+      facultad: http://localhost:8792
+      semestre: http://localhost:8791
