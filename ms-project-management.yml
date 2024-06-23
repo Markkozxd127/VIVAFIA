@@ -14,6 +14,8 @@ spring:
   cloud:
     config:
       uri: http://localhost:8081
+  main:
+    allow-bean-definition-overriding: true
 
 feign:
   client:
