@@ -1,6 +1,6 @@
+# ms-academic-management.yml
 server:
   port: ${PORT:8791}
-
 message: Configuración de Gestión de usuarios en el servidor levantado!
 
 spring:
