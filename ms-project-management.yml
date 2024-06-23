@@ -1,3 +1,4 @@
+# ms-project-management.yml
 server:
   port: ${PORT:8793}
 
@@ -22,7 +23,10 @@ eureka:
 
 feign:
   client:
-    url:
-      escuela: http://localhost:8792
-      facultad: http://localhost:8792
-      semestre: http://localhost:8791
+    config:
+      escuela:
+        url: http://localhost:8792
+      facultad:
+        url: http://localhost:8792
+      semestre:
+        url: http://localhost:8791
