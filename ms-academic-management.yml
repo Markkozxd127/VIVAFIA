@@ -1,6 +1,8 @@
 server:
   port: ${PORT:8791}
-message: Configuracion de Gestión de usuarios en el servidor levantado!
+
+message: Configuración de Gestión de usuarios en el servidor levantado!
+
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -11,6 +13,7 @@ spring:
     hibernate:
       ddl-auto: update
       database-platform: org.hibernate.dialect.MySQLDialect
+
 eureka:
   client:
     register-with-eureka: true
