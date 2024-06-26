@@ -1,4 +1,3 @@
-# ms-sport-management.yml
 server:
   port: ${PORT:8797}
 message: Configuración de Gestión de sports
